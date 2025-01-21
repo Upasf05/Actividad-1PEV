@@ -6,9 +6,9 @@ namespace EjerciciosBasicos
     {
         static void Main(string[] args) //Metodo que permite la ejecucion del programa
         {
-            int opcion; // Variable común para seleccionar la opción del menú
-            int input;  // Variable común para usar en los bucles
-            int suma;   // Variable común para cálculos de suma
+            int opcion; // Variable comun para seleccionar la opción del menu
+            int input;  // Variable comun para usar en los bucles
+            int suma;   // Variable comun para cálculos de suma
 
             do
             {
@@ -19,9 +19,9 @@ namespace EjerciciosBasicos
                 Console.WriteLine("4. Imprimir suma de los primeros 100 numeros. 5. Imprimir los numeros pares del 1 al 100. ");
                 Console.WriteLine("Si elige la opcion 3 aparecera Fizz para numeros divisibles por 3 y Buzz para numeros divisibles por 5,o FizzBuzz en los que sean divisibles por ambos. ");
                 Console.WriteLine("Este menu reaparecera cada que finalice una operacion. Si desea terminar pulse 6.");
-                opcion = Convert.ToInt32(Console.ReadLine()); //Se usa INT32 para la lectura de este valor porque si no el codigo dara error.
+                opcion = Convert.ToInt32(Console.ReadLine()); //Se usa INT32 para la lectura de este valor porque si no el codigo dara error
 
-                switch (opcion) //Switch para seleccion de multiples opciones.
+                switch (opcion) //Switch para seleccion de multiples opciones
                 {
                     case 1: //Opcion 1
                         Console.WriteLine("Números pares (1 al 100):");
@@ -86,7 +86,7 @@ namespace EjerciciosBasicos
                         }
                         break;
 
-                    case 6: //Opcion para cerrar el programa.
+                    case 6: //Opcion para cerrar el programa
                         Console.WriteLine("Saliendo del programa...");
                         break;
 
@@ -95,7 +95,7 @@ namespace EjerciciosBasicos
                         break;
                 }
 
-                Console.WriteLine(); // Espaciado entre iteraciones del menú
+                Console.WriteLine(); // Espaciado entre iteraciones del menu
             } while (opcion != 6);
         }
     }
