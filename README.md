@@ -23,9 +23,9 @@ Buenas a todos, profesor y compañeros, esta es mi actividad 1 de la presente as
 
 Tres archivos de código C# que realizan diferentes ejercicios.
 
--Los primeros dos son programas de opcion multiple que realizan diferentes operaciones segun el numero que se colque. Estos programas funcionan gracias a la función de switch y el uso de una variable númerica en común para todas las operaciones.
+-Los primeros dos son programas de opcion multiple que realizan diferentes operaciones segun el numero que se coloque. Estos programas funcionan gracias a la función de switch y el uso de una variable númerica en común para todas las operaciones.
 
--El tercer archivo tiene un programa que almacena clases que representan objetos con vbalores establecidos. Por ejemplo, una clase de persona que almacenará su nombre, apellidos, número de cédula, edad, etc.
+-El tercer archivo tiene un programa que almacena clases que representan objetos con valores establecidos. Por ejemplo, una clase de persona que almacenará su nombre, apellidos, número de cédula, edad, etc.
 
 ## **Recursos utilizados** 
 
