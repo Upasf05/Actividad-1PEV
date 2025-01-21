@@ -17,7 +17,6 @@
 # **Presentación** 
 Buenas a todos, profesor y compañeros, esta es mi actividad 1 de la presentae asignatura de Programación Estructurada y Visual.
 
----
 
 ## **Contenidos** 
 
