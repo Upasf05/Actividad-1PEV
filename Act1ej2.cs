@@ -11,13 +11,13 @@ namespace EjerciciosConSwitch
             {
                 Console.WriteLine("TAREA 1, EJERCICIO 2");
                 Console.WriteLine("PATRICIO SUAREZ, PROGRAMACION ESTRUCTURADA Y VISUAL");
-                Console.WriteLine("Pulse un boton para escojer una opcion");
+                Console.WriteLine("Pulse un boton para escoger una opcion");
                 Console.WriteLine("1. Verificador de numero positivo o negativo. 2.Evaluar una nota. 3.Determinar rango de un numero");
                 Console.WriteLine("4. Mostrar un dia de la semana. 5.Calculadora express. 6.Salir del programa.");
 
                 while (!int.TryParse(Console.ReadLine(), out opcion) || opcion < 1 || opcion > 6) //Bucle while que valida entrada e impide un error.
                 {
-                    Console.WriteLine("Por favor, ingrese una opción válida (1-6):");
+                    Console.WriteLine("Por favor, ingrese una opción valida (1-6):");
                 }
 
                 switch (opcion) //Switch del programa
@@ -27,11 +27,11 @@ namespace EjerciciosConSwitch
                         if (double.TryParse(Console.ReadLine(), out double numero)) //Funcion TryParse evita errores en casi cualquier conversion.
                         {
                             if (numero > 0)
-                                Console.WriteLine("El número es positivo.");
+                                Console.WriteLine("El numero es positivo.");
                             else if (numero < 0)
-                                Console.WriteLine("El número es negativo.");
+                                Console.WriteLine("El numero es negativo.");
                             else
-                                Console.WriteLine("El número es cero.");
+                                Console.WriteLine("El numero es cero.");
                         }
                         else
                         {
@@ -58,49 +58,49 @@ namespace EjerciciosConSwitch
                         Console.Write("Ingrese el límite inferior: ");
                         if (!double.TryParse(Console.ReadLine(), out double limiteInferior))
                         {
-                            Console.WriteLine("Entrada inválida para el límite inferior. Intente de nuevo.");
+                            Console.WriteLine("Ingrese un numero valido.");
                             break;
                         }
 
-                        Console.Write("Ingrese el límite superior: ");
+                        Console.Write("Ingrese el limite superior: ");
                         if (!double.TryParse(Console.ReadLine(), out double limiteSuperior) || limiteSuperior <= limiteInferior)
                         {
-                            Console.WriteLine("Entrada inválida para el límite superior. El límite superior debe ser mayor que el inferior.");
+                            Console.WriteLine("Entrada invalida para el limite superior. El limite superior debe ser mayor que el inferior.");
                             break;
                         }
 
-                        Console.Write("Ingrese un número para determinar su rango: ");
+                        Console.Write("Ingrese un numero para determinar su rango: ");
                         if (double.TryParse(Console.ReadLine(), out double rangoNumero))
                         {
                             if (rangoNumero < limiteInferior)
                             {
-                                Console.WriteLine($"El número es menor que {limiteInferior}.");
+                                Console.WriteLine($"El numero es menor que {limiteInferior}.");
                             }
                             else if (rangoNumero >= limiteInferior && rangoNumero <= limiteSuperior)
                             {
-                                Console.WriteLine($"El número está entre {limiteInferior} y {limiteSuperior}.");
+                                Console.WriteLine($"El numero esta en un rango intermedio.");
                             }
                             else
                             {
-                                Console.WriteLine($"El número es mayor que {limiteSuperior}.");
+                                Console.WriteLine($"El numero es mayor que {limiteSuperior}.");
                             }
                         }
                         else
                         {
-                            Console.WriteLine("Entrada inválida. Por favor, ingrese un número.");
+                            Console.WriteLine("Ingrese un numero valido.");
                         }
                         break;
 
                     case 4: //Ejercicio 4
-                        Console.Write("Ingrese un número del 1 al 7: "); //Obtener un dia de la semana
+                        Console.Write("Ingrese un numero del 1 al 7 para obtener un dia de la semana: "); //Obtener un dia de la semana
                         if (int.TryParse(Console.ReadLine(), out int dia) && dia >= 1 && dia <= 7)
                         {
-                            string[] diasSemana = { "Lunes", "Martes", "Miércoles", "Jueves", "Viernes", "Sábado", "Domingo" };
-                            Console.WriteLine($"El día de la semana es: {diasSemana[dia - 1]}.");
+                            string[] diasSemana = { "Lunes", "Martes", "Miercoles", "Jueves", "Viernes", "Sabado", "Domingo" };
+                            Console.WriteLine($"Ha obtenido el dia: {diasSemana[dia - 1]}.");
                         }
                         else
                         {
-                            Console.WriteLine("Entrada no válida. Ingrese un número del 1 al 7.");
+                            Console.WriteLine("Ingrese un numero valido del 1 al 7.");
                         }
                         break;
 
@@ -133,27 +133,27 @@ namespace EjerciciosConSwitch
                                             Console.WriteLine("No se puede dividir a 0.");
                                         break;
                                     default:
-                                        Console.WriteLine("Operación no válida.");
+                                        Console.WriteLine("Operacion no valida.");
                                         break;
                                 }
                             }
                             else
                             {
-                                Console.WriteLine("Entrada no valida para el segundo número.");
+                                Console.WriteLine("Entrada no valida para el segundo numero.");
                             }
                         }
                         else
                         {
-                            Console.WriteLine("Entrada no valida para el primer número.");
+                            Console.WriteLine("Entrada no valida para el primer numero.");
                         }
                         break;
 
                     case 6:
-                        Console.WriteLine("Saliendo del programa...");
+                        Console.WriteLine("Cerrando programa");
                         break;
 
                     default:
-                        Console.WriteLine("Opción no válida.");
+                        Console.WriteLine("Opcion no valida.");
                         break;
                 }
 
