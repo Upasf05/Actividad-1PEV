@@ -4,7 +4,7 @@ public class Persona //Clase para persona
 {
     public string nombre; //Atributos en valores int y string para cada clase que sera un objeto
     public int edad; //Int (entero) para edad
-    public int dni; //Celula solo puede incluir numeros
+    public int dni; //DNIC solo puede incluir numeros
     public void MostrarInformacion() //Metodo para probar y mostrar los nombres y edad
     {
         Console.WriteLine("Nombre: " + nombre + ", Edad: " + edad + ", DNI: " + dni); //Mostrar en pantalla los valores introducidos
@@ -74,10 +74,10 @@ public class Program //Clase principal que muestra todos los atributos solicitad
         circulo.MostrarInformacion();
 
         Persona2 personaExt = new Persona2();
-        personaExt.nombre = "Maria";
-        personaExt.apellido = "Perez";
-        personaExt.edad = 28;
-        personaExt.sexo = "Femenino";
+        personaExt.nombre = "Gabriela";
+        personaExt.apellido = "Mendez";
+        personaExt.edad = 24;
+        personaExt.genero = "Femenino";
         personaExt.ImprimirInformacion();
     }
 }
